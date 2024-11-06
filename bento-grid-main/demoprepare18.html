@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: brown;
+        }
+
+        .content{
+            width: 1340px;
+            display: grid;
+            grid-template-columns: repeat(4 , 1fr);
+            grid-template-rows: repeat(3 , 1fr);
+            grid-gap: 20px;
+        }
+
+        .content img{
+            width: 300px;
+            height: 310px;
+            object-fit: cover;
+        }
+        .item_1{
+            grid-column: span 4;
+
+        }
+
+        .item_1 img{
+            width: 1300px;
+             }
+
+        .item_2{
+            grid-row: span 2;
+        }
+
+        .item_2 img{
+            height: 650px;
+        }
+
+        .item_3{
+            grid-row: span 2;
+            position: relative;
+            top: 50px;
+        }
+
+        .item_3 img{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+        }
+        
+        .item_4{
+            position: relative;
+            left: -140px;
+            z-index: -1;
+        }
+
+        .item_4 img{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .item_5{
+            position: relative;
+            left: -120px;
+        }
+
+        .item_5 img{
+            width: 250px;
+            position: relative;
+           
+        }
+
+        .item_6{
+            position: absolute;
+            top: 815px;
+            left: 800px;
+
+        }
+
+        .item_6 img{
+            width: 5 7y00px;
+            height: 210px;
+        }
+
+        .item_7{
+            position: absolute;
+            z-index: 1;
+            top: 725px;
+            left: 1070px;
+        }
+
+        .item_7 img{
+           width: 250px;
+           height: 300px;
+        }
+
+
+        @media only screen and (max-width: 376px) {
+    .content {
+        display: grid;
+        grid-template-columns: 1fr; /* Барлық элементтер бір бағанға түседі */width: 100%;
+    }
+
+    .item img {
+        width: 100%; /* Суреттер толық енімен көрсетіледі */
+        height: auto;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="item item1"><img src="C:\Users\kommu\Downloads\Без названия (83).jpeg" alt=""></div>
+        <div class="item item2"><img src="C:\Users\kommu\Downloads\Без названия (83).jpeg" alt=""></div>
+        <div class="item item3"><img src="C:\Users\kommu\Downloads\Без названия (83).jpeg" alt=""></div>
+        <div class="item item4"><img src="C:\Users\kommu\Downloads\Без названия (83).jpeg" alt=""></div>
+        <div class="item item5"><img src="C:\Users\kommu\Downloads\Без названия (83).jpeg" alt=""></div>
+        <div class="item item6"><img src="C:\Users\kommu\Downloads\Без названия (83).jpeg" alt=""></div>
+        <div class="item item7"><img src="C:\Users\kommu\Downloads\Без названия (83).jpeg" alt=""></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+
+    <style>
+        body{
+            background-color: brown;
+        }
+
+         header .head-container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            
+         }
+
+         .head-container p{
+            border: 2px solid white;
+            border-radius: 20px;
+            padding: 8px 12px;
+            color: white;
+         }
+
+         img{
+            width: 300px;
+            height: 310px;
+            object-fit: cover;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+         }
+        .img-dami{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+         }
+      
+         main{
+            width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 20px;
+            position: relative;
+            top: 50px;
+         }
+
+         .item{
+            background-color: azure;
+            height: 250px;
+         }
+
+         .container{
+            width: 1000px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 20px;
+            position: relative;
+            top: 80px;
+         }
+
+         .serch{
+            background-color: rgb(14, 219, 219);
+            height: 100px;
+         }
+
+
+         footer{
+            text-align: center;
+         }
+
+         @media only screen and (max-width: 376px) {
+            .head-container{
+                display: flex;
+                flex-direction: column;
+            }
+
+            img{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            main{
+                display: grid;
+                grid-template-columns: repeat  (4 1fr);
+                grid-template-rows: 1fr;
+
+            }
+
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <p>sen</p>
+            <p>men</p>
+            <h2>Damira</h2>
+            <p>ol</p>
+            <p>olar</p>
+         </div>
+        </div>
+    </header>
+    <section>
+    <div><img src="C:\Users\kommu\Downloads\File_Dina Nurpeisova with dombyra, Kazakhstan.jpeg" class="diana"></div>
+    <div><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg" class="igra"></div>
+    <div><img src="C:\Users\kommu\Downloads\Top 25 Most Beautiful Daisy Flowers.jpeg" ></div>
+</section>
+    <main>
+       <div class="item item_1">1</div>
+       <div class="item item_2">2</div>
+       <div class="item item_3">3</div>
+       <div class="item item_4">4</div>
+       <div class="item item_5">5</div>
+       <div class="item item_6">6</div>
+       <div class="item item_7">7</div>
+       <div class="item item_8">8</div>
+    </main>
+
+    <div class="container">
+        <div class="serch serch_1">1</div>
+        <div class="serch serch_2">2</div>
+        <div class="serch serch_3">3</div>
+        <div class="serch serch_4">4</div>
+        <div class="serch serch_5">5</div>
+        <div class="serch serch_6">6</div>
+        <div class="serch serch_7">7</div>
+        <div class="serch serch_8">8</div>
+    </div>
+<footer>
+    foloow allongs
+</footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RhythmoTune</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">RhythmoTune</div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item active">Home</a>
+                <a href="#" class="nav-item">Categories</a>
+                <a href="#" class="nav-item">Artists</a>
+                <a href="#" class="nav-item">Playlists</a>
+            </nav>
+            <div class="playlist">
+                <p class="playlist-title">Playlists</p>
+                <a href="#" class="playlist-item">Vibes & Chill</a>
+                <a href="#" class="playlist-item">Morning Boost</a>
+                <a href="#" class="playlist-item">Rhythm & Energy</a>
+            </div>
+            <button class="logout-btn">Logout</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Top Bar -->
+            <div class="top-bar">
+                <input type="text" class="search-bar" placeholder="Search for a song">
+                <div class="profile">
+                    <img src="profile.jpg" alt="Profile" class="profile-pic">
+                    <span class="username">Molly Hunter</span>
+                    <span class="badge">Premium</span>
+                </div>
+            </div>
+
+            <!-- Featured Song -->
+            <div class="featured-song">
+                <div class="song-card active">
+                    <img src="cover1.jpg" alt="Echoes of Midnight" class="cover-image">
+                    <div class="song-info">
+                        <h3>Echoes of Midnight</h3>
+                        <p>Jon Hickman</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="categories">
+                <h4>Select Categories</h4>
+                <div class="category-list">
+                    <button class="category-btn active">All</button>
+                    <button class="category-btn">Relax</button>
+                    <button class="category-btn">Sad</button>
+                    <button class="category-btn">Party</button>
+                    <button class="category-btn">Romance</button>
+                    <button class="category-btn">Energetic</button>
+                    <button class="category-btn">Relaxing</button>
+                    <button class="category-btn">Jazz</button>
+                    <button class="category-btn">Alternative</button>
+                </div>
+            </div>
+
+            <!-- Popular Songs -->
+            <div class="popular-songs">
+                <h4>Popular Songs</h4>
+                <div class="song-list">
+                    <div class="song-card"><img src="cover2.jpg" alt="Golden Days"><p>Golden Days</p><span>Felix Carter</span></div>
+                    <div class="song-card"><img src="cover3.jpg" alt="Fading Horizon"><p>Fading Horizon</p><span>Ella Hunt</span></div>
+                    <div class="song-card"><img src="cover4.jpg" alt="Waves of Time"><p>Waves of Time</p><span>Lana Rivers</span></div>
+                    <div class="song-card"><img src="cover5.jpg" alt="Electric Dreams"><p>Electric Dreams</p><span>Mia Lowell</span></div>
+                    <div class="song-card"><img src="cover6.jpg" alt="Shadows & Light"><p>Shadows & Light</p><span>Ryan Miles</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Now Playing Bar -->
+        <div class="now-playing-bar">
+            <img src="cover1.jpg" alt="Echoes of Midnight" class="now-playing-cover">
+            <div class="now-playing-info">
+                <p class="song-title">Echoes of Midnight</p>
+                <p class="song-artist">Jon Hickman</p>
+            </div>
+            <div class="player-controls">
+                <button class="play-btn">▶️</button>
+                <input type="range" class="progress-bar" value="0" max="100">
+                <button class="volume-btn">🔊</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

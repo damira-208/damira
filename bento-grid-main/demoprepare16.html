@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>16</title>
+    <style>
+        body{
+            background-color: green;
+            width: 100vw;
+        }
+
+        .content{
+            width: 800px;
+            display: grid;
+            grid-template-columns: repeat(5 , 1fr);
+            grid-template-rows: repeat(4 , 1fr);
+            grid-gap: 20px;
+        }
+
+       .content img{
+        width: 200px;
+        height: 220px;
+       }
+
+       .item_1 img{
+         width: 400px;
+         height: 420px;
+         object-fit: cover;
+       }
+
+     .item_6 img{
+         width: 400px;
+         height: 420px;
+         object-fit: cover;
+       }
+
+
+       .item_2{
+        grid-row: span 4;
+       
+       }
+
+       .item_2 img{
+        height: 950px;
+        object-fit: cover;
+       }
+
+       .item_7{
+        grid-column:  span 3;
+        position: relative;
+        top: -200px;
+       }
+
+       .item_7 img{
+        width: 650px;
+        object-fit: cover;
+       }
+
+       .item_12{
+        position: relative;
+        left: 640px;
+       }
+
+
+       .item_8{
+        position: relative;
+        bottom: -245px;
+        left: 870px;
+        
+       }
+
+       .item_8 img{
+         width: 400px;
+         object-fit: cover;
+       }
+
+       .item_9{
+        position: relative;
+        top: -400px;
+       }
+
+
+       .item_10{
+        position: relative;
+        top: -400px;
+       }
+
+
+       .item_11{
+        position: relative;
+        top: -400px;
+       }
+
+       .item_8{
+        position: relative;
+        top: -150px;
+       }
+
+       .item_12{
+        position: relative;
+        top: -590px;
+       }
+
+
+
+
+
+       .speach-1 {
+        position: absolute;
+        background-color: white;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 18px;
+        top: 30px;
+        left: 40px;
+       }
+       .speach-2{
+        position: absolute;
+        background-color: white;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 18px;
+        top: 500px;
+        left: 40px;
+
+       }
+
+       .speach-12{
+        position: absolute;
+        background-color: white;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 18px;
+        top: 200px;
+        left: 500px;
+
+       }
+
+
+       .speach-3{
+        position: absolute;
+        background-color: white;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 18px;
+        top: 530px;
+        left: 680px;
+        width: 140px;
+
+       }
+
+       .speach-4{
+        position: absolute;
+        background-color: white;
+        border: 1px solid whitesmoke;
+        border-radius: 6px;
+        padding: 8px 12px;
+        font-size: 18px;
+        top: 260px;
+        left: 800px;
+        width: 280px;
+       }
+       
+       @media only screen and (max-width: 376px) {
+            .content {
+                grid-template-columns: 1fr; /* Барлық элементтер бір бағанға түседі */
+                width: 100%; /* Кіші экрандарда толығымен экранды жабу үшін */
+            }
+
+            .content img {
+                width: 100%; /* Кіші экранда суреттер толық енімен көрсетіледі */
+                height: auto;
+            }
+
+            .speach-1, .speach-2, .speach-3, .speach-4, .speach-12 {
+                font-size: 16px; /* Кіші экрандарда мәтін өлшемін азайту */
+                padding: 5px 10px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+  <main>
+    <div class="content">
+        <div class="item item_1"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_2"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_3"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_4"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_5"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_6"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_7"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_8"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_9"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_10"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_11"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        <div class="item item_12"><img src="C:\Users\kommu\Downloads\paige_catart on instagram.jpeg"></div>
+        
+        <div class="speach speach-1">Hey, what’s up?</div>
+        <div class="speach speach-2">Not much, just trying to save the</div>
+        <div class="speach speach-3">Oh, the usual then!</div>
+        <div class="speach speach-4">Did you finish your homework?</div>
+        <div class="speach speach-5">Does writing 'almost' count?</div>
+        <div class="speach speach-6">In my world, it does!</div>
+        <div class="speach speach-7">Why did the coffee file a police report?"</div>
+        <div class="speach speach-8">No idea. Why?</div>
+        <div class="speach speach-9">It got mugged</div>
+        <div class="speach speach-10">Ready to fight the villains?</div>
+        <div class="speach speach-11">Only if we’re stopping for pizza after!</div>
+        <div class="speach speach-12">Deal</div>
+
+     </div>
+</main>
+   
+        
+       
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    /* Негізгі стильдер */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Әр бөлімнің базалық стилі */
+.header, .nav, .main, .sidebar, .footer {
+  padding: 20px;
+  color: white;
+}
+
+.header {
+  background-color: #4CAF50;
+}
+
+.nav {
+  background-color: #2196F3;
+}
+
+.main {
+  background-color: #f44336;
+}
+
+.sidebar {
+  background-color: #FF9800;
+}
+
+.footer {
+  background-color: #9E9E9E;
+}
+
+/* Мобильді экран үшін */
+@media (max-width: 767px) {
+  .nav, .sidebar {
+    display: none; /* Навигация және бүйірлік панель мобильді экранда көрінбейді */
+  }
+}
+
+/* Компьютер экраны үшін */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: row; /* Элементтер қатарға орналасады */
+  }
+
+  .nav {
+    width: 20%; /* Навигация 20% кеңістік алады */
+  }
+
+  .main {
+    width: 60%; /* Негізгі контент 60% кеңістік алады */
+  }
+
+  .sidebar {
+    width: 20%; /* Бүйірлік панель 20% кеңістік алады */
+  }
+}
+
+</style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout Example</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">Header</div>
+  <div class="nav">Navigation</div>
+  <div class="main">Main Content</div>
+  <div class="sidebar">Sidebar</div>
+  <div class="footer">Footer</div>
+</body>
+</html>
